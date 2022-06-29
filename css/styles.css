@@ -8,62 +8,92 @@ body {
 	box-sizing: border-box;
 }
 
-div {
-	padding: 0px;
-	margin: 0px;
+footer *{
+	font-size: 8pt;
 }
 
-h1 {
-	font-weight: bold;
-	color: #ccd0e0;
+.justify{
+	text-align: justify;
+}
+
+.center{
 	text-align: center;
 }
 
+#headingTitle {
+	font-weight: bold;
+	color: #0e811c;
+	text-align: center;
+	margin: auto;
+}
+
+h3 {
+	padding-top: 5px;
+}
+
+h2 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+@media (max-width: 991.98px){
+	h3 {
+		padding-top: 10px;
+		text-align: center;
+	}
+}
+
 /* Languages for project page */
+.projectLanguage{
+	overflow: hidden;
+}
 .projectLanguage > div{
-	height: 100px;
-	margin: -8px;
+	min-height: 100px;
 }
 
-.projectLanguage > div > h2{
-	border-bottom: 4px solid #00640c;
-	padding-left: 8px;
-}
-
-.projectLanguage > div > p{
-	padding-left: 8px;
+.line {
+	border-top: 4px solid #00640c;
+	height: 0px;
+	width: 100vw;
+	position:relative;
+    left: 50%;
+    transform: translateX(-50.4%);
 }
 
 .projectLanguage > div:nth-child(even){
 	background-color: dimgray;
 }
 
-.projectLanguage > div:nth-child(even) > h2{
-	border-bottom: 4px solid #0e811c;
+.projectLanguage > div:nth-child(even) > .line{
+	border-top: 4px solid #0e811c;
 }
 
 /* Navigation Menu */
-.navMenu {
+.navMenu.col-lg-4{
 	float: right;
-	border: 3px solid dimgrey;
+	padding: 0px;
 }
 
-.navMenu > p{
+.navMenu p{
 	padding: 0px;
 	margin: 0px;
+	display: block;
 }
 
-.navMenu > p > a{
+.navMenu p > a{
 	text-decoration: none;
 	color: white;
-	background-color: black;
-	display: inline-block;
+	background-color: #bs-gray-400;
+	display: block;
 	text-align: center;
 	border: 3px solid #00640c;
+	border-bottom: 0px;
 	padding: 0px;
 	margin: 0px;
-	width: 300px;
-	height: 50px;
 	line-height: 50px;
-	font-size: 150%;
+	font-size: 120%;
+}
+
+#lastNavSelection {
+	border-bottom: 3px solid #00640c;
 }

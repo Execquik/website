@@ -6,55 +6,95 @@
 	<title>List of Projects</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	
 	
 </head>
 
 <body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="center">Contact Me: LucB.Exec.gmail.com</div>
+			</div>
+		</nav>
+	</header>
+ 
+<div class="container">
+	<div class="row">
+		<h1 class="col-lg-8 col-sm-12" id="headingTitle">List of Projects</h1>
+		<div class="navMenu col-lg-4 col-sm-12">
+			<div class="row g-0">
+				<p class="col-xs-12"><a href="index.html">Mission Statement</a></p>
+				<p class="col-xs-12"><a href="index.html">Resume</a></p>
+				<p class="col-xs-12" id="lastNavSelection"><a href="index.html">Projects</a></p>
+			</div>
+		</div>
 
-<div class="navMenu">
-	<p><a href="index.html">Mission Statement</a></p>
-	<p><a href="index.html">Resume</a></p>
-	<p><a href="index.html">Projects</a></p>
+		<h3>How to download and compile projects</h3>
+		<p class="justify">
+		To download an executable version project, click the provided link, then navigate to the "releases" page on GitHub.
+		If you'd prefer the latest version of the project, you can clone the respository or simply download the zip file of the repository, then
+		use the appropriate compiler for the language and your operating system. All projects compile from the root directory (of the project) unless otherwise specified.
+		Not all projects compile for all operating systems.
+		</p>
+		<p class="justify">
+		Web-based projects (CSS, HTML, Javascript) can be simply downloaded by clicking the green "code" button on GitHub, then "Download Zip".
+		Afterwords, you can open the HTML files in your browser of choice for complete/near complete functionality.
+		</p>
+	</div>
 </div>
-
-<h1>List of Projects</h1>
-<h3>How to download and compile projects</h3>
-<p>
-To download an executable version project, click the provided link, then navigate to the "releases" page on GitHub.
-If you'd prefer the latest version of the project, you can clone the respository or simply download the zip file of the repository, then
-use the appropriate compiler for the language and your operating system. All projects compile from the root directory (of the project) unless otherwise specified.
-Not all projects compile for all operating systems.
-</p>
-<p>
-Web-based projects (CSS, HTML, Javascript) can be simply downloaded by clicking the green "code" button on GitHub, then "Download Zip".
-Afterwords, you can open the HTML files in your browser of choice for complete/near complete functionality.
-</p>
-
 
 
 <!-- Project List -->
 <div class="projectLanguage">
 	<div>
-		<h2>C</h2>
-		<p>Hello World</p>
+		<div class="container">
+			<h2>C</h2> <div class="line"></div>
+			<p>Hello World</p>
+		</div>
 	</div>
 
 	<div>
-		<h2>C++</h2>
-		<p>Hello World</p>
+		<div class="container">
+			<h2>C++</h2> <div class="line"></div>
+			<p>Hello World</p>
+		</div>
 	</div>
 
 	<div>
-		<h2>Java</h2>
-		<p>Hello World</p>
+		<div class="container">
+			<h2>Java</h2> <div class="line"></div>
+			<p>Hello World</p>
+		</div>
 	</div>
 
 	<div>
-		<h2>Javascript</h2>
-		<p>Hello World</p>
+		<div class="container">
+			<h2>Web Development*</h2> <div class="line"></div>
+			<p>This website!</p>
+			<p>*This includes CSS, HTML, Javascript, and Twitter Bootstrap</p>
+		</div>
 	</div>
 </div>
+
+<footer class="container">
+	<div class="row g-0">
+		<p class="col-lg-4 col-md-4 col-xs-12 center">
+			Twitter Bootstrap created by Twitter and is licensed under the MIT License.
+		</p>
+		<p class="col-lg-4 col-md-4 col-xs-12 center">
+			Roboto Mono was designed by Christian Robertson and is licensed under Apache-2.0.
+		</p>
+		<div class="col-lg-4 col-md-4 col-xs-12 center">
+		Special Thanks to:
+		<p style="margin-bottom: 0px">Yaakov Chaikin</p>
+		<p>John Hopkins University</p>
+		</div>
+	</div>
+</footer>
 
 </body>
 </html>
